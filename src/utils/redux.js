@@ -36,7 +36,7 @@ function reducer(state, action) {
             return {
                 ...state,
                 todos : state.todos.map((todo) => {
-                    return todo.id === action.payload.id
+                    return todo.id === action.payload
                     ? { ...todo, complete : !todo.complete } 
                     : todo
                 })
@@ -45,7 +45,7 @@ function reducer(state, action) {
         case TODO_ACTIONS.DELETE_TODO:
             return {
                 ...state,
-                todos : state.todos.filter((todo) => todo.id !== action.payload.id)
+                todos : state.todos.filter((todo) => todo.id !== action.payload)
             };
     
         

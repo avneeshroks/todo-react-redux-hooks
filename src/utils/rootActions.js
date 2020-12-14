@@ -12,7 +12,7 @@ export const addTodoAction = (todo) => ({
 })
 
 export const toggleTodoAction = (todoId) => ({
-    type : TODO_ACTIONS.TODO_ACTIONS,
+    type : TODO_ACTIONS.TOGGLE_TODO,
     payload : todoId
 })
 

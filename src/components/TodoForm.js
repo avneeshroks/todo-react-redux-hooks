@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { addTodoAction } from "../utils/rootActions";
+import { useDispatch } from 'react-redux';
 import uuid from "uuid/v4";
-import { useDispatch } from 'react-redux' 
+import { addTodoAction } from "../utils/rootActions";
 
 
 const TodoForm = () => {

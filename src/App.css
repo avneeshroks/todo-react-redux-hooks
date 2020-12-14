@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-list {
+  width: 300px;
+  text-align: center;
+}
+
+
+.todo-list li {
+  list-style: none;
+}
+
+.todo-list li input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.todo-list .deleteIcon {
+  float: right;
+  cursor: pointer;
+}
+
+.todo-list .task-done {
+  text-decoration: line-through;
+}
